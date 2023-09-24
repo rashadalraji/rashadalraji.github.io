@@ -11,6 +11,7 @@ import { DashboardComponent } from './vehicles/dashboard/dashboard.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { ToastrModule } from 'ngx-toastr';
+import { NotificationsComponent } from './vehicles/notifications/notifications.component';
 // import { HighchartsChartComponent } from 'highcharts-angular';
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ToastrModule } from 'ngx-toastr';
     VehicleAddComponent,
     VehicleListComponent,
     DashboardComponent,
+    NotificationsComponent,
     
     // HighchartsChartComponent
   ],

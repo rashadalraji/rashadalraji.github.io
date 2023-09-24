@@ -44,7 +44,10 @@ export class VehicleAddComponent implements OnInit {
   
   ngOnInit(): void {
     let list = JSON.parse(JSON.stringify(this.vehicleService.getList('added_list')));
-    this.addedList = JSON.parse(list);
+    if(list){
+      this.addedList = JSON.parse(list);
+    }
+    
     if(this.userId){
       
       this.listData = JSON.parse(list);

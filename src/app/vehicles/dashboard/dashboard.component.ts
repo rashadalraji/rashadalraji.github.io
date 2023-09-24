@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit{
 
   onClickFilter(){    
     
-    if(this.model.Date){
+    if(this.model.Date && this.listData && this.listData.length > 0){
       this.listData.forEach((element:any) => {
         element.CAR_ENTRY_DATE = element.CAR_ENTRY_DATE.split('T')[0];
         element.CAR_EXIT_DATE = element.CAR_EXIT_DATE.split('T')[0];
