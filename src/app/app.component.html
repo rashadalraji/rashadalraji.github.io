@@ -1,3 +1,14 @@
-<div class="container m-5 p-5">
-  <button class="btn btn-primary btn-sm" (click)="onClickToastrBtn()">Toastr Button</button>
+<div class="row">
+<div class="col-md-3" style="overflow: hidden;">
+    <div class="sidebar">
+        <a [routerLink]="['/dashboard']" [routerLinkActive]="'active'">Dashboard</a>
+        <a [routerLink]="['/vehicle-list']" [routerLinkActive]="'active'">Vehicles</a>
+        
+      </div>
 </div>
+<div class="col-md-9">
+    <router-outlet></router-outlet>
+</div>
+
+</div>
+

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +6,5 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private toastr: ToastrService){
-
-  }
-  title = 'myApp';
-
-  onClickToastrBtn(){
-    this.toastr.success('Toastr successfully added','Success');
-  }
+  title = 'selliseAssesment';
 }
